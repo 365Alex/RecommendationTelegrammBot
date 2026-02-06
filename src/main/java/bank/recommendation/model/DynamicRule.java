@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "dynamic_rules")
+@Table(name = "DYNAMIC_RULES")
 public class DynamicRule {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "rule_statistics")
+@Table(name = "RULE_STATISTICS")
 public class RuleStatistic {
 
     @Id
