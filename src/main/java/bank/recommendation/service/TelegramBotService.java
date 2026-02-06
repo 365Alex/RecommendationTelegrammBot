@@ -1,6 +1,6 @@
 package bank.recommendation.service;
 
-
+import bank.recommendation.DTO.ProductRecommendation;
 import bank.recommendation.DTO.RecommendationResponse;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -32,11 +32,11 @@ public class TelegramBotService {
             Integer tableCount = jdbcTemplate.queryForObject(checkTableSql, Integer.class);
 
             if (tableCount == null || tableCount == 0) {
-                System.out.println("Таблицы не найдены. Запустите приложение с data.sql файлом.");
+                System.out.println("Таблицы не найдены");
             }
         } catch (Exception e) {
             System.err.println("База данных не инициализирована: " + e.getMessage());
-            System.err.println("Пожалуйста, создайте таблицы вручную или используйте data.sql");
+            System.err.println("Пожалуйста, создайте таблицы вручную");
         }
     }
 
@@ -70,8 +70,7 @@ public class TelegramBotService {
                 return "❌ *Ошибка:* База данных не инициализирована.\n\n" +
                         "Таблица users не найдена. Пожалуйста:\n" +
                         "1. Откройте H2 Console: http://localhost:8080/h2-console\n" +
-                        "2. Подключитесь к базе: jdbc:h2:file:./data/recommendations\n" +
-                        "3. Создайте таблицы из data.sql файла";
+                        "2. Подключитесь к базе: jdbc:h2:file:./data/recommendations\n";
             }
 
             // Ищем пользователя по имени

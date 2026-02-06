@@ -1,6 +1,5 @@
 package bank.recommendation.controller;
 
-
 import bank.recommendation.DTO.ProductRecommendation;
 import bank.recommendation.DTO.RecommendationResponse;
 import bank.recommendation.service.RecommendationService;
@@ -13,11 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
-
 @RestController
 @RequestMapping("/bot")
 public class TelegramBotController {
-
     private final RecommendationService recommendationService;
     private final JdbcTemplate jdbcTemplate;
 

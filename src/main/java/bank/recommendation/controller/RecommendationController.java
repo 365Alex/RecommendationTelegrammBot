@@ -17,12 +17,12 @@ public class RecommendationController {
 
     private final RecommendationService recommendationService;
 
-    public RecommendationController(RecommendationService recommendationService){
+    public RecommendationController (RecommendationService recommendationService){
         this.recommendationService = recommendationService;
     }
 
     @GetMapping("/{userId}")
     public RecommendationResponse getRecommendations(@PathVariable UUID userId) {
-            return recommendationService.getRecommendations(userId);
+        return recommendationService.getRecommendations(userId);
     }
 }

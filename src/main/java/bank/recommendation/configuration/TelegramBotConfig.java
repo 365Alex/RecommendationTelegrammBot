@@ -1,6 +1,5 @@
 package bank.recommendation.configuration;
 
-
 import bank.recommendation.service.TelegramBotService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

@@ -46,4 +46,7 @@ public class TopSavingRule implements RecommendationRuleSet {
                 ? Optional.of(new ProductRecommendation(PRODUCT_NAME, PRODUCT_ID, DESCRIPTION))
                 : Optional.empty();
     }
+    public String getProductId() {
+        return PRODUCT_ID;
+    }
 }

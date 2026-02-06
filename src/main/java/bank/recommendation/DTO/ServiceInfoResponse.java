@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ServiceInfoResponse {
 
+
     @JsonProperty("name")
     private String name;
 

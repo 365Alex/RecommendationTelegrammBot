@@ -1,7 +1,5 @@
 package bank.recommendation.DTO;
 
-
-
 import bank.recommendation.entity.QueryType;
 
 import java.util.List;

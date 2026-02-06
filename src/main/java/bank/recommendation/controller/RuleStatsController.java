@@ -1,6 +1,5 @@
 package bank.recommendation.controller;
 
-
 import bank.recommendation.DTO.CreateDynamicRuleRequest;
 import bank.recommendation.DTO.RuleStatsResponse;
 import bank.recommendation.entity.RuleStatistic;
